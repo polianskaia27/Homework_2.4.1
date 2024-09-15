@@ -1,3 +1,7 @@
+let yearlyExpences = [
+  1500, 100, 390, 80000, 1980, 90, 15010, 1400, 300, 290, 4000, 1250,
+];
+
 let expencesExamples = [
   {
     yearlyExpences: [
@@ -16,15 +20,17 @@ let expencesExamples = [
   },
 ];
 
-function sum(array) {
+function sum(yearlyExpences) {
   let sumOfYearlyExpences = 0;
-  for (j = 0; j < array.length; j++) {
-    if (array[j] > 1000) {
-      sumOfYearlyExpences += array[j];
+  for (j = 0; j < yearlyExpences.length; j++) {
+    if (yearlyExpences[j] > 1000) {
+      sumOfYearlyExpences += yearlyExpences[j];
     }
   }
   return sumOfYearlyExpences;
 }
+
+console.log(sum(yearlyExpences));
 
 testData = [40590, 148200, 25709];
 
@@ -37,6 +43,3 @@ testData.forEach((value, index) => {
     );
   }
 });
-
-
-
